@@ -30,6 +30,7 @@ img {
 $gradient-start: #9356DC;
 $gradient-end: #FF79DA;
 $text-color: #ffffff;
+$grey2 : #EAEAEA;
 
 @mixin gradient-button($radius: 50px) {
     background: linear-gradient(to right, $gradient-start, $gradient-end);
@@ -44,6 +45,23 @@ $text-color: #ffffff;
 }
 
 @media (max-width: 768px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .localisation {
+        background: $grey2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 50px;
+    }
+
     .navLink {
         display: flex;
         justify-content: center;
