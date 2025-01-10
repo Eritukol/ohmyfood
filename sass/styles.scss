@@ -1,0 +1,56 @@
+/******RESET CSS***********/
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body, ul, h1, h2, h3, h4, p {
+    margin: 0;
+   
+  
+}
+
+ol, ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/****** General ***********/
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+$gradient-start: #9356DC;
+$gradient-end: #FF79DA;
+$text-color: #ffffff;
+
+@mixin gradient-button($radius: 50px) {
+    background: linear-gradient(to right, $gradient-start, $gradient-end);
+    color: $text-color;
+    border: none;
+    border-radius: $radius;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+@media (max-width: 768px) {
+    .navLink {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .buttonMobile {
+        @include gradient-button(25px);
+    }
+}

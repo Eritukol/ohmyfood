@@ -1,0 +1,48 @@
+/******RESET CSS***********/
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body, ul, h1, h2, h3, h4, p {
+  margin: 0;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/****** General ***********/
+* {
+  font-family: "Raleway", sans-serif;
+}
+
+@media (max-width: 768px) {
+  .navLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .buttonMobile {
+    background: linear-gradient(to right, #9356DC, #FF79DA);
+    color: #ffffff;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
