@@ -40,4 +40,20 @@ header {
   width: 100%;
 }
 
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.localisation {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #EAEAEA;
+  height: 50px;
+}
+
 /*# sourceMappingURL=main.css.map */
