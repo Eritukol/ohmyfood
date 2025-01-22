@@ -3,3 +3,30 @@ $breakpoint-sm: 576px; // Small (petite tablettes)
 $breakpoint-md: 768px; // Medium (tablettes)
 $breakpoint-lg: 992px; // Large (ordinateurs de bureau)
 $breakpoint-xl: 1200px; // Extra large (grand ecrans)
+
+
+// Media queries
+
+@mixin media-sm {
+    @media (min-width: #{$breakpoint-sm}) {
+        @content;
+    }
+}
+
+@mixin media-md {
+    @media (min-width: #{$breakpoint-md}) {
+        @content;
+    }
+}
+
+@mixin media-lg {
+    @media (min-width: #{$breakpoint-lg}) {
+        @content;
+    }
+}
+
+@mixin media-xl {
+    @media (min-width: #{$breakpoint-xl}) {
+        @content;
+    }
+}
