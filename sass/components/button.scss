@@ -1,0 +1,15 @@
+@mixin gradient-button($radius: 50px) {
+    background: linear-gradient(to right, $gradient-start, $gradient-end);
+    color: $text-color;
+    border: none;
+    border-radius: $radius;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.buttonMobile {
+    @include gradient-button(25px);
+}

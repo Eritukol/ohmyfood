@@ -1,53 +1,9 @@
 @import "./base/reset.scss";
 
-/****** General ***********/
-* {
-    font-family: 'Raleway', sans-serif;
-}
+@import "./base/color.scss";
 
-$gradient-start: #9356DC;
-$gradient-end: #FF79DA;
-$text-color: #ffffff;
-$grey2 : #EAEAEA;
+@import "./components/button.scss";
 
-@mixin gradient-button($radius: 50px) {
-    background: linear-gradient(to right, $gradient-start, $gradient-end);
-    color: $text-color;
-    border: none;
-    border-radius: $radius;
-    padding: 10px 20px;
-    font-size: 16px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-}
+@import "./layout/header.scss";
 
-@media (max-width: 768px) {
-    header {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-    }
-
-    .localisation {
-        background: $grey2;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 50px;
-    }
-
-    .navLink {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-    }
-    .buttonMobile {
-        @include gradient-button(25px);
-    }
-    
-}
+@import "./layout/footer.scss";
