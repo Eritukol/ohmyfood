@@ -1,6 +1,8 @@
+@use "../base/color";
+
 @mixin gradient-button($radius: 50px) {
-    background: linear-gradient(to right, $gradient-start, $gradient-end);
-    color: $text-color;
+    background: linear-gradient(to right, color.$gradient-start, color.$gradient-end);
+    color: color.$text-color;
     border: none;
     border-radius: $radius;
     padding: 10px 20px;

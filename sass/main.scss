@@ -1,11 +1,11 @@
-@import "./base/reset.scss";
+@use "base/reset.scss";
 
-@import "./base/color.scss";
+@use "base/color.scss";
 
-@import "./components/button.scss";
+@use "components/button.scss";
 
-@import "./layout/header.scss";
+@use "layout/header.scss";
 
-@import "./base/body.scss";
+@use "pages/index.scss";
 
-@import "./layout/footer.scss";
+@use "layout/footer.scss";

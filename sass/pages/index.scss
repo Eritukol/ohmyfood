@@ -1,3 +1,5 @@
+@use "../base/color";
+
 body {
     display: flex;
     justify-content: center;
@@ -10,7 +12,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: $grey2;
+    background-color: color.$grey2;
     height: 50px;
     
     
