@@ -1,11 +1,15 @@
-@use "base/reset.scss";
+@use "base/_reset.scss";
 
-@use "base/color.scss";
+@use "base/_base.scss";
 
-@use "components/button.scss";
+@use "base/_color.scss";
 
-@use "layout/header.scss";
+@use "base/_helper.scss";
 
-@use "pages/index.scss";
+@use "components/_button.scss";
 
-@use "layout/footer.scss";
+@use "layout/_header.scss";
+
+@use "pages/_index.scss";
+
+@use "layout/_footer.scss";

@@ -21,6 +21,17 @@ img {
   object-fit: cover;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #F6F6F6;
+  height: 100%;
+}
+
+.main-container {
+  width: 100%;
+}
+
 .buttonMobile {
   background: linear-gradient(to right, #9356DC, #FF79DA);
   color: #ffffff;
@@ -33,12 +44,17 @@ img {
   display: inline-block;
 }
 
-header {
+.header {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  height: 63px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+}
+.header__logo {
+  display: block;
+  width: 162px;
 }
 
 body {

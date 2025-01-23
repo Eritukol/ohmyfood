@@ -1,13 +1,6 @@
 @use "../base/color";
 
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-    background-color: color.$grey;
-}
+
 .localisation {
     display: flex;
     flex-direction: row;
