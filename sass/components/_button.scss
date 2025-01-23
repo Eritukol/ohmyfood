@@ -12,6 +12,6 @@
     display: inline-block;
 }
 
-.buttonMobile {
+.btn--primary {
     @include gradient-button(25px);
 }

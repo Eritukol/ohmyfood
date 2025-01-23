@@ -36,7 +36,7 @@ body {
   width: 100%;
 }
 
-.buttonMobile {
+.btn--primary {
   background: linear-gradient(to right, #9356DC, #FF79DA);
   color: #ffffff;
   border: none;
