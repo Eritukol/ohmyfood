@@ -1,6 +1,7 @@
 @use "../base/color";
 
 
+
 .localisation {
     display: flex;
     justify-content: center;
@@ -12,7 +13,29 @@
     
     & > p {
         font-weight: 500;
-        font-family: "Roboto";
+
     }
+}
+
+.reservation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px;
+    
+
+    &__title {
+        width: 275px;
+        height: 68px;
+    }
+
+    &__description {
+        width: 315px;
+        height: 46px;
+    }
+}
+
+.btn--primary {
+    margin-top: 10px;
 }
 
