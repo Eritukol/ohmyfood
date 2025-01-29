@@ -1,6 +1,17 @@
 @use "../base/color";
 
+@mixin rectangle($radius :20px) {
+    width: 322.486px;
+    height: 72.379px;
+    border-radius: $radius;
+    background-color: color.$grey;
+}
 
+@mixin flex-column-center($justify: space-between, $align: center) {
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+}
 
 .localisation {
     display: flex;
@@ -37,5 +48,39 @@
 
 .btn--primary {
     margin-top: 10px;
+}
+
+.operation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 440px;
+    width: 375;
+    background-color: white;
+    
+    &__title {
+        display: flex;
+        
+    }
+
+    &__choose {
+        @include rectangle();
+        @include flex-column-center($justify: center, $align: center);
+    }
+
+    &__compose {
+        @include rectangle();
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__taste {
+        @include rectangle();
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
