@@ -83,58 +83,59 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 15px;
-}
-.reservation__title {
-  width: 275px;
-  height: 68px;
-}
-.reservation__description {
-  width: 315px;
-  height: 46px;
+  gap: 20px;
+  padding: 40px 15px;
 }
 
 .btn--primary {
   margin-top: 10px;
 }
 
-.operation {
+.functioning i {
+  color: #7E7E7E;
+}
+
+.functioning {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  height: 440px;
   background-color: white;
   gap: 30px;
+  padding: 40px 20px;
 }
-.operation__title {
+.functioning__title {
   display: flex;
 }
-.operation__choose {
-  width: 322.486px;
-  height: 72.379px;
+.functioning__btns {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+.functioning__btn {
+  padding: 26px 30px;
   border-radius: 20px;
   background-color: #F6F6F6;
   display: flex;
   align-items: center;
-  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.25);
 }
-.operation__compose {
-  width: 322.486px;
-  height: 72.379px;
-  border-radius: 20px;
-  background-color: #F6F6F6;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.functioning__btn:hover i {
+  color: #9356DC;
 }
-.operation__taste {
-  width: 322.486px;
-  height: 72.379px;
-  border-radius: 20px;
-  background-color: #F6F6F6;
+.functioning__badge {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 8px;
+  background-color: #9356DC;
+  color: white;
+  font-size: 15px;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
 }
 
 /*# sourceMappingURL=main.css.map */
