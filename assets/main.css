@@ -66,6 +66,11 @@ body {
   width: 162px;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 .localisation {
   display: flex;
   justify-content: center;
@@ -167,6 +172,7 @@ body {
 }
 .restaurants__card-content {
   display: flex;
+  flex-direction: column;
   background-color: white;
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
