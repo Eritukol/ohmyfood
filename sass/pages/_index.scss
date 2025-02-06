@@ -113,6 +113,7 @@ a {
         display: flex;
         flex-direction: column;
         border-radius: 15px;
+        position: relative;
         
     }
     &__card img {
@@ -131,6 +132,35 @@ a {
         border-bottom-right-radius: 15px;
         border-bottom-left-radius: 15px;
         gap: 10px;
+    }
+
+    &__card-heart {
+        position: absolute;
+        right: 26px;
+        bottom: 15px;
+        
+    }
+
+    &__card-heart i.fa-solid {
+        position: absolute;
+        font-size: 30px;
+        cursor: pointer;
+        opacity: 0;
+        -webkit-background-clip: text;
+        background-clip: text;
+        transition: opacity 0.7s ease-in-out;
+        -webkit-text-fill-color: transparent;
+        background-image: linear-gradient(#FF79DA, #9356DC);
+    }
+
+    &__card-heart i.fa-solid:hover {
+        opacity: 1;
+    }
+
+    &__card-heart i.fa-regular {
+        font-size: 30px;
+        
+        
     }
 }
 

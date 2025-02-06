@@ -164,6 +164,7 @@ a {
   display: flex;
   flex-direction: column;
   border-radius: 15px;
+  position: relative;
 }
 .restaurants__card img {
   display: flex;
@@ -180,6 +181,28 @@ a {
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
   gap: 10px;
+}
+.restaurants__card-heart {
+  position: absolute;
+  right: 26px;
+  bottom: 15px;
+}
+.restaurants__card-heart i.fa-solid {
+  position: absolute;
+  font-size: 30px;
+  cursor: pointer;
+  opacity: 0;
+  -webkit-background-clip: text;
+  background-clip: text;
+  transition: opacity 0.7s ease-in-out;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+}
+.restaurants__card-heart i.fa-solid:hover {
+  opacity: 1;
+}
+.restaurants__card-heart i.fa-regular {
+  font-size: 30px;
 }
 
 /*# sourceMappingURL=main.css.map */
