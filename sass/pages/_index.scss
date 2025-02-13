@@ -1,4 +1,5 @@
 @use "../base/color";
+@use "../utils/media";
 
 @mixin rectangle($radius :20px) {
     padding: 26px 30px;
@@ -208,6 +209,30 @@ a {
        font-size: 13px;
        height: 15px;
        width: 25px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .functioning {
+        padding-left: 10%;
+        padding-right: 10%;
+        &__btns {
+            flex-direction: row;
+        }
+    }
+
+    .restaurants {
+        padding-left: 10%;
+        padding-right: 10%;
+        &__cards {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        &__cards article {
+            width: 44%;
+        }
     }
 }
 

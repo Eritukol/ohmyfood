@@ -260,4 +260,26 @@ a {
   width: 25px;
 }
 
+@media (min-width: 1025px) {
+  .functioning {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .functioning__btns {
+    flex-direction: row;
+  }
+  .restaurants {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .restaurants__cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .restaurants__cards article {
+    width: 44%;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
