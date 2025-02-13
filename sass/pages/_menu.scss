@@ -1,5 +1,17 @@
 @use "../base/color";
 
+.back-arrow {
+    display: flex;
+    position: absolute;
+    gap: 8px;
+    left: 20px;
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
 .menu {
     display: flex;
     flex-direction: column;
