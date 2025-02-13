@@ -318,32 +318,6 @@ a {
   color: #008766;
 }
 
-.footer {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  padding: 22px 25px;
-  background-color: #353535;
-  color: white;
-  gap: 16px;
-}
-.footer__logo {
-  display: flex;
-  width: 120px;
-  filter: invert(100);
-}
-.footer__content {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 10px;
-}
-.footer__content i {
-  font-size: 13px;
-  height: 15px;
-  width: 25px;
-}
-
 @media (min-width: 1025px) {
   .functioning {
     padding-left: 10%;
