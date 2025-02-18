@@ -44,7 +44,9 @@
     z-index: 2;
     background-color: color.$grey;
     
-
+    &__card-checkbox {
+        display: none;
+    }
 
     &__title {
         display: flex;
@@ -71,11 +73,24 @@
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
+        cursor: pointer;
         width: 100%;
         background-color: white;
         padding: 14px;
         border-radius: 15px;
          
+    }
+
+    &__card-checkbox:checked + .menu__card-content .menu__card-price {
+        transform: translateX(-20px);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    &__card-checkbox:checked + .menu__card-content .menu__card-price::after {
+        content: "✔️";
+        background-color: green;
+        color: green;
+        margin-left: 5px;
     }
 
     &__card-text {

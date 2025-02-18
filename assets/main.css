@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /******RESET CSS***********/
 html {
   box-sizing: border-box;
@@ -125,6 +126,9 @@ body {
   z-index: 2;
   background-color: #F6F6F6;
 }
+.menu__card-checkbox {
+  display: none;
+}
 .menu__title {
   display: flex;
 }
@@ -145,10 +149,21 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  cursor: pointer;
   width: 100%;
   background-color: white;
   padding: 14px;
   border-radius: 15px;
+}
+.menu__card-checkbox:checked + .menu__card-content .menu__card-price {
+  transform: translateX(-20px);
+  transition: transform 0.3s ease-in-out;
+}
+.menu__card-checkbox:checked + .menu__card-content .menu__card-price::after {
+  content: "✔️";
+  background-color: green;
+  color: green;
+  margin-left: 5px;
 }
 .menu__card-text {
   display: flex;
