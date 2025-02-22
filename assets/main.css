@@ -219,6 +219,14 @@ body {
   font-size: 26px;
 }
 
+.btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+
 .loader {
   display: flex;
   justify-content: center;
