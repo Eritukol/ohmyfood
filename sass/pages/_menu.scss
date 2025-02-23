@@ -53,6 +53,7 @@
         font-weight: 200;
         display: inline-block;
         padding-bottom: 5px;
+        
     }
 
     &__title::after {
@@ -98,6 +99,7 @@
     &__card-price {
         font-size: 16px;
         font-weight: bold;
+        top: 13px;
         transition: transform 0.3s ease-in-out;
         white-space: nowrap; /* Empêche le retour à la ligne */
         position: relative;
@@ -152,7 +154,13 @@
         width: 50px;
         
     }
-    
+
+    &__card-title {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 70%;
+    }
 
     &__card-text {
         display: flex;
@@ -162,7 +170,10 @@
 
     &__card-subtitle {
         flex: 1;
-        
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 70%;
     }
 
     

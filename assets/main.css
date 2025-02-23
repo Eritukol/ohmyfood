@@ -170,6 +170,7 @@ body {
 .menu__card-price {
   font-size: 16px;
   font-weight: bold;
+  top: 13px;
   transition: transform 0.3s ease-in-out;
   white-space: nowrap; /* Empêche le retour à la ligne */
   position: relative;
@@ -214,6 +215,12 @@ body {
 .menu__card-checkbox:checked + .menu__card-content .menu__card-check {
   width: 50px;
 }
+.menu__card-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 70%;
+}
 .menu__card-text {
   display: flex;
   flex-direction: column;
@@ -221,6 +228,10 @@ body {
 }
 .menu__card-subtitle {
   flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 70%;
 }
 .menu__heart {
   position: absolute;
