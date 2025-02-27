@@ -1,5 +1,18 @@
 @use "../base/color";
 
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translate(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+body {
+    background-color: white;
+}
 .back-arrow {
     display: flex;
     position: absolute;
@@ -33,6 +46,7 @@
     color: black;
 }
 
+
 .menu {
     position: relative;
     display: flex;
@@ -40,7 +54,8 @@
     gap: 40px;
     padding: 26px 18px;
     margin-top: -70px;
-    border-radius: 45px;
+    border-top-left-radius: 45px;
+    border-top-right-radius: 45px;
     z-index: 2;
     background-color: color.$grey;
     
@@ -74,6 +89,8 @@
     }
 
     &__card {
+        opacity: 0;
+        animation: slideIn 0.5s ease-in-out forwards;
         display: flex;
         flex-direction: column;
         border-radius: 15px;
@@ -93,6 +110,7 @@
         border-radius: 15px;
         transition: background-color 0.3s ease-in-out;
         overflow: hidden;
+        
     }
 
 
@@ -141,7 +159,7 @@
     }
 
     &__card-checkbox:checked + .menu__card-content .menu__card-price {
-        transform: translateX(-45px);
+        transform: translateX(-69px);
         // transition: transform 0.3s ease-in-out;
     } 
 
@@ -151,7 +169,7 @@
     }
 
     &__card-checkbox:checked + .menu__card-content .menu__card-check {
-        width: 50px;
+        width: 69px;
         
     }
 
@@ -166,6 +184,7 @@
         display: flex;
         flex-direction: column;
         flex-grow: 1;
+        gap: 5px;
     }
 
     &__card-subtitle {
@@ -179,11 +198,11 @@
     
 
     &__heart {
-        position: absolute;
-        right: 41px;
-        top: 33px;
+        position: relative;
         
     }
+        
+    
 
     &__heart i.fa-solid {
         position: absolute;
@@ -208,10 +227,39 @@
     }
 }
 
+.menu__card:nth-child(1) { animation-delay: 0.3s; }
+.menu__card:nth-child(2) { animation-delay: 0.6s; }
+.menu__card:nth-child(3) { animation-delay: 0.8s; }
+
+
+.section-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+
 .btn {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
     padding-bottom: 20px;
+}
+
+@media (min-width: 1025px) {
+    .menu {
+    
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+    }
+    .section-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
 }

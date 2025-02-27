@@ -4,14 +4,14 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 63px;
+    height: 96px;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
     background-color: white;
 
     &__logo {
         display: block;
-        width: 162px;
-
+        width: 200px;
+        height: 34px;
     }
 }
 
