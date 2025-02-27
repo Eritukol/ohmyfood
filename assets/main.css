@@ -234,6 +234,8 @@ body {
   width: 69px;
 }
 .menu__card-title {
+  font-size: 18px;
+  font-weight: 600;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -247,6 +249,7 @@ body {
 }
 .menu__card-subtitle {
   flex: 1;
+  font-weight: 300;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
